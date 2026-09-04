@@ -21,3 +21,11 @@ ctk.set_appearance_mode("dark")
 BG = "#0f1115"
 PANEL = "#181b20"
 ACCENT = "#7ee787"
+
+
+class ExpressionReaderApp(ctk.CTk):
+    def __init__(self):
+        super().__init__()
+        self.title("Face Expression Reader")
+        self.geometry("760x600")
+        self.configure(fg_color=BG)
