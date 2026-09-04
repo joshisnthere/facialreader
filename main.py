@@ -13,3 +13,11 @@ import customtkinter as ctk
 import cv2
 import mediapipe as mp
 from PIL import Image, ImageTk
+
+import expression_logic as logic
+
+ctk.set_appearance_mode("dark")
+
+BG = "#0f1115"
+PANEL = "#181b20"
+ACCENT = "#7ee787"
