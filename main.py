@@ -29,3 +29,12 @@ class ExpressionReaderApp(ctk.CTk):
         self.title("Face Expression Reader")
         self.geometry("760x600")
         self.configure(fg_color=BG)
+
+        self.video_label = ctk.CTkLabel(self, text="", fg_color=PANEL, corner_radius=12)
+        self.video_label.pack(padx=20, pady=(20, 10))
+
+        self.expression_var = ctk.StringVar(value="Reading...")
+        ctk.CTkLabel(
+            self, textvariable=self.expression_var,
+            font=ctk.CTkFont(size=26, weight="bold"), text_color=ACCENT,
+        ).pack(pady=(0, 4))
